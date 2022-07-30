@@ -358,10 +358,13 @@ html {
 
 body {
     font-family: 'Merriweather', serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 main {
-    background-color:gainsboro
+    background-color:gainsboro;
 }
 
 h1 {
@@ -370,9 +373,7 @@ h1 {
     background-color: #303052;
     color:white;
     padding: 30px;
-    margin-top: -.999rem;
-    margin-right: -.999rem;
-    margin-left: -.999rem;;
+    margin-top: 0;
 }
 
 h2 {
@@ -401,7 +402,7 @@ h2 {
 
 .slim-hr {
     border: 1px solid #303052;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -409,7 +410,7 @@ h2 {
 legend {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 2.5rem 0;
+    padding: 2rem 0;
 }
 
 fieldset {
@@ -517,7 +518,7 @@ input,
 textarea,
 select {
     transition-duration: .5s;
-    background-color: gainsboro;
+    background-color: rgb(211, 211, 211);
 }
 
 button {
@@ -547,13 +548,17 @@ button {
 @media (min-width: 768px) {
     body {
         margin: 0 auto;
-        text-align: center;
+        text-align: left;
         max-width: 100%;
     }
     #zip {
         width: 25%;
     }    
 
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
 
     input[type="text"],
     input[type="email"],
@@ -564,18 +569,11 @@ button {
     #street,
     #city,
     #state {
-        display: flex;
-        justify-content: space-between;
         width: 60%;
-        padding: 7px;
-        float: right;
         padding: 1.1rem;
     }
     .topfield label {
-        display: flex;
-        justify-content: space-between;
         width: 20%;
-        float: left; 
         margin: 10px 50px 20px 0px;
         clear: both;
 }
@@ -600,8 +598,12 @@ button {
     textarea::placeholder {
         text-align: left;
     }
-    
 
+    .topfield {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
 }
 
