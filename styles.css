@@ -184,9 +184,6 @@ button {
     color: lightslategray;
 }
 
-textarea::placeholder {
-    text-align: left;
-}
 
 
 
@@ -245,6 +242,11 @@ textarea::placeholder {
     .slim-hr {
         width: 75%;
     }
+    
+    textarea::placeholder {
+        text-align: left;
+    }
+    
 
 
 }
