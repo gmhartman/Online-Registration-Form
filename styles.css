@@ -184,7 +184,9 @@ button {
     color: lightslategray;
 }
 
-
+textarea::placeholder {
+    text-align: left;
+}
 
 
 
