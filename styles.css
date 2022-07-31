@@ -440,6 +440,7 @@ input[type="tel"],
     justify-content: space-between;
     width: 95%;
     padding: 7px;
+    box-sizing: border-box;
 }
 
 form {
@@ -485,7 +486,7 @@ input:focus {
 }
 
 #zip {
-    width: 50%;
+    width: 47%;
 }
 
 #topics {
@@ -552,8 +553,14 @@ button {
         max-width: 100%;
     }
     #zip {
-        width: 25%;
+        width: 15%;
+        margin-right: 45%;
     }    
+
+    .zipflex {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .flex {
         display: flex;
@@ -571,6 +578,8 @@ button {
     #state {
         width: 60%;
         padding: 1.1rem;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
     .topfield label {
         width: 20%;
@@ -603,6 +612,10 @@ button {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+    }
+
+    label {
+      vertical-align: middle;
     }
 
 }
